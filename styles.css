@@ -306,11 +306,12 @@ i {
     padding: 2% ;
     font-size: 2em !important;
     color:whitesmoke;
+    transition: 0.5s all ease-in-out;
 }
 
 i:hover{
-    color: blue;
-    font-size: 3em !important;
+    color: #e57622;
+    transform: scale(1.15);
 }
 
 .footer{
@@ -325,12 +326,13 @@ i:hover{
 
 .social-icons{
     position: relative;
-    /* display: inline-block; */
-    /* transform: translate(30%, 30%); */
-    /* left: 22%; */
-    left: 21.2%;
+    left: 20.2%;
     top: 20%;
-    /* bottom: 80%; */
+
+}
+
+.followus h1{
+    text-shadow: 0 2px 5px rgb(0 0 0 / 50%);
 }
 
 .right-left{
@@ -339,11 +341,6 @@ i:hover{
 
 .emailID{
     letter-spacing: 0.1em;
-}
-
-.names{
-    padding-top: 15%;
-    /* font-size: 1.2em; */
 }
 
 .right-right{
@@ -360,7 +357,7 @@ i:hover{
 
 @media only screen and (max-width: 600px) {
     nav{
-        display: none;
+        display: none !important;
     }
     body{
         width: 100%;
@@ -372,6 +369,7 @@ i:hover{
     #container{
         height: 100vh;
         width: 100%;
+        overflow: hidden;
     }
     .content h2{
         position: relative;
@@ -420,4 +418,99 @@ i:hover{
     padding: 10px;
     font-size: 30px;
     }
-  }
+    
+    .grid-2{
+        padding: 2% 4%;
+        display: inline-block;
+        
+    }
+    .left-content{
+        display: inline-block;
+    }
+    .grid-2 h1{
+        margin-left: 0;
+        font-size: 30px;
+        position: relative;
+        top: -10px;
+    }
+    .right-content {
+        display: inline-block;
+        border-right: 5px solid #fafafa;
+        text-shadow: 0 2px 5px rgb(0 0 0 / 50%);
+        transition: 0.5s ease-in;
+    }
+    .left-content li {
+        font-size: 20px;
+        text-decoration: none;
+        list-style: none;
+        color: #fafafa;
+    }
+    .about-content {
+        position: relative;
+        left: 0%;
+        width: 100%;
+        height: 100vh;
+        bottom: -100px;
+        margin-bottom: 10%;
+    }
+   
+    .about-head {
+        position: absolute;
+        text-shadow: 0 2px 5px rgb(0 0 0 / 50%);
+        font-size: 28px;
+        color: #13213C;
+        left: 31%;
+        bottom: -145px;
+        text-align: center;
+    }
+    .join-head h1{
+        padding-top: 20%;
+        font-size: 22px !important;
+        text-align: center;
+        color: #4D4D75;
+    }
+    .join-head-sub h2{
+        font-size: 15px;
+    }
+    #name h2{
+        font-size: 20px;
+    }
+    .boxform{
+        width: 100%;
+        height: 30px;
+    }
+    .firstname {
+        position: relative;
+        top: -8px;
+        left: 0;
+    }
+    .name{
+        font-size: 20px;
+    }
+    .email{
+        position: relative;
+        top: -8px;
+        left: 0;  
+    }
+    .organisation{
+        position: relative;
+        top: -8px;
+        left: 0;      
+    }
+    form {
+        padding-top: 5.5%;
+        position: relative;
+        top: -15px;
+    }
+    .followus h1 {
+        position: relative;
+        top: 10px;
+        left: 28%;
+        text-align: center;
+        justify-content: center;
+    }
+    .followus .social-icons{
+        position: relative;
+        top: 20%;
+    }
+}
