@@ -3,7 +3,7 @@ const url = "https://newsapi.org/v2/top-headlines?country=in&category=business&p
 
 const recievedNews = (newsdata) => {
     const articlesDiv = document.querySelector(".articles")
-    
+console.log(newsdata)
     newsdata.articles.forEach((article) => {
 			
       const div = document.createElement("div")
@@ -24,4 +24,4 @@ const recievedNews = (newsdata) => {
 fetch(url)
   .then(response => response.json())
   .then(recievedNews)
-console.log(newsdata) 
+ 
