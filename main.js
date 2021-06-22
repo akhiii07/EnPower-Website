@@ -1,4 +1,4 @@
-const key = "490aee1a53fc4b73b49449b95608997d"
+const key = "5197fea25c654efba4e354bf8aa0afae"
 const url = `https://newsapi.org/v2/top-headlines?country=in&category=business&pageSize=5&apiKey=${key}`
 
 const recievedNews = (newsdata) => {
