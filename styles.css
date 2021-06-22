@@ -1,1 +1,566 @@
 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;    
+}
+
+#container{
+    position: relative;
+    width: 100% !important;
+    height: 100vh !important;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./Pictures/OAT.jpg)!important;
+    background-position: center;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.navbar{
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    text-decoration: none;
+    padding-right: -1% !important;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 18px;
+    transition:0.3s all;
+}
+
+nav ul li:hover{
+    transform: scale(0.9);
+}
+nav ul li a:hover{
+    color: #e57622 !important;   
+}
+
+.hover-line::after{
+    content: '';
+    display: block !important;
+    width: 0%;
+    height: 3px;
+    background-color: #e57622;
+    transition:width .3;
+}
+
+.hover-line:hover::after{
+    width: 100% !important;
+    transition:width .3s !important;
+}
+
+.content{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: azure;
+    text-align: center;
+}
+
+.content h2{
+    position: relative;
+    top: -180px;
+    font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.content h1{
+    position: relative;
+    top: -160px;
+    font-size: 95px;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header-area span{
+    color: #e5e5e5 !important;
+    position: relative !important;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    top: 255px;
+    font-size: 35px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+} 
+
+/* ####################################################################################### */
+/* ABOUT  */
+.about-container{
+    padding: 5% 8% !important;
+    background-color: #fafafa;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.about-head{
+    position: absolute;
+    /* width: 100%; */
+    text-shadow: 0 2px 5px rgb(0 0 0 / 50%);
+    font-size: 46px;
+    color: #13213C;
+    left: 50%;
+    transform: translateX(-50%);
+    /* top: 3px; */
+    bottom: -150px;
+    text-align: center;
+}
+
+.about-head h1{
+    font-size: 65px;
+}
+
+.about-content{
+    position: relative;
+    /* top: 90%; */
+    left: 0%;
+    /* transform: translate(-50%, -50%);
+    transform: translate(-15%,-100%); */
+    margin-top: -4% !important;
+    width: 100%;
+    height: 100%;
+    bottom: -138px;
+    margin-bottom: 8%;
+}
+
+.about-content p{
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    /* top: 20%; */
+    /* left: 50%;
+    transform: translate(-50%, -20%); */
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+/* ########################################################################################## */
+
+/* STAY UPDATED */
+
+/* #####################################################################################333 */
+
+.container-stayUpdated{
+    padding: 5% 8%;
+    background-color: #e57622;
+}
+
+.head-stay{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.head-stay h1{
+    position: relative;
+    text-align: center;
+    text-shadow: 0 2px 5px rgb(0 0 0 / 50%);
+    color: #fafafa;
+    width: 100%;
+    height: 100%;
+    font-size: 65px;
+}
+
+.divisions{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.grid-2{
+   
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-2-1{
+    padding: 2% 4%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.left-content{
+    display: grid;
+    padding: 1% 3%;
+    border-left: 5px solid #fafafa;  
+}
+.divisions h1{
+    text-align: center;
+    text-shadow: 0 2px 5px rgb(0 0 0 / 50%);
+    color: #fafafa;
+    font-size: 40px;
+    padding-top: 1%;
+    position: relative;
+   
+}
+
+.left-content li{
+    font-size: 25px;
+    text-decoration: none;
+    list-style: none;
+    color: #fafafa;
+    
+}
+.right-content{
+    display: grid;
+    border-right: 5px solid #fafafa;
+    text-shadow: 0 2px 5px rgb(0 0 0 / 50%);
+    transition: 0.5s ease-in;
+}
+.right-content center :hover{
+    transition: 0.5s ease-in-out;
+    transform: scale(1.05);
+}
+
+/* ############################################################################################### */
+
+
+/* CONTACT US */
+
+
+/* #####################################################################################333 */
+
+.container-join{
+    padding: 5% 8%;
+    background-color: #fafafa;
+}
+
+.join-contemt{
+    background-color: #e5e5e5;
+    padding: 4% 8%;
+    border-radius: 70px;
+}
+.join-head{
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 0 2px 5px rgb(0 0 0 / 50%);
+}
+.join-head-sub{
+    padding-top: 2%;
+    font-size: 15px;
+    text-align: center;
+    color: #4d4d4d;
+}
+
+form{
+    padding-top: 4.5%;
+}
+.name{
+    color: #4d4d4d;
+    padding-top: 1%;
+}
+.boxform{
+    width: 70%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+}
+.firstname{
+    position: relative;
+    top: -32px;
+    left: 25%;
+}
+.email{
+    position: relative;
+    top: -32px;
+    left: 25%;
+}
+.organisation{
+    position: relative;
+    top: -32px;
+    left: 25%;
+}
+
+/* ############################################################################################### */
+
+
+/* FOOTER */
+
+
+/* #####################################################################################333 */
+
+i {
+    padding: 2% ;
+    font-size: 2em !important;
+    color:whitesmoke;
+    transition: 0.5s all ease-in-out;
+}
+
+i:hover{
+    color: #e57622;
+    transform: scale(1.15);
+}
+
+.footer{
+    padding: 2% 5%;
+    background-color: #13213C;
+    color: #fafafa;
+}
+
+.grid-2 h1{
+    margin-left: 25%;
+    display: inline;
+}
+
+.social-icons{
+    position: relative;
+    left: 20.2%;
+    top: 20%;
+
+}
+
+.followus h1{
+    text-shadow: 0 2px 5px rgb(0 0 0 / 50%);
+}
+
+.right-left{
+    font-size: 1.2em;
+}
+
+.emailID{
+    letter-spacing: 0.1em;
+}
+
+.right-right{
+    font-size:1.4em;
+}
+
+.right{
+    color: grey !important;
+}
+
+.btn-button{
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 0 0 100px;
+    position: relative;
+    background-color: #e57622;
+    border: none;
+    width: 200px;
+    padding: 20px;
+    color: #e5e5e5;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.45s all;
+    text-decoration: none;
+    overflow: hidden;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.btn-button:hover{
+    background-color: #e5e5e5;
+    box-shadow: 0 2px 10px 5px #bbced8;
+    color: #e57622;
+}
+.btn-button:focus{
+    outline: none;
+}
+
+.news-api-img{
+    width: 220px;
+    height: 130px;
+    border: 2px solid #fafafa;
+    
+}
+.news-api-link{
+    text-decoration: none;
+}
+
+/* #####################################################################################################################################################################################333 */
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 600px) {
+    nav{
+        display: none !important;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+    }
+    .logo{
+        width: 30px;
+    }
+    #container{
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+    .content h2{
+        position: relative;
+    top: -140px;
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 0 2px 5px rgb(0 0 0 / 50%);
+    }
+    .content h1{
+        position: relative;
+    top: -150px;
+    font-size: 65px;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 5px rgb(0 0 0 / 50%);
+    }
+    .header-area span{
+        left: 10%;
+        top: 150px;
+    }
+    .about-head{
+        position: absolute;
+    text-shadow: 0 2px 5px rgb(0 0 0 / 50%);
+    font-size: 28px;
+    color: #13213C;
+    left: 12%;
+    bottom: -185px;
+    text-align: center;
+    }
+    .about-content{
+        position: relative;
+        left: 0%;
+        width: 100%;
+        height: 100vh;
+        bottom: -205px;
+        margin-bottom: 8%;
+    }
+    .about-content p{
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        font-size: 22px;
+    }
+    .head-stay{
+        margin: auto;
+    width: 100%;
+    padding: 10px;
+    font-size: 30px;
+    }
+    
+    .grid-2{
+        padding: 2% 4%;
+        display: inline-block;
+        
+    }
+    .left-content{
+        display: inline-block;
+    }
+    .grid-2 h1{
+        margin-left: 0;
+        font-size: 30px;
+        position: relative;
+        top: -10px;
+    }
+    .right-content {
+        display: inline-block;
+        border-right: 5px solid #fafafa;
+        text-shadow: 0 2px 5px rgb(0 0 0 / 50%);
+        transition: 0.5s ease-in;
+    }
+    .left-content li {
+        font-size: 20px;
+        text-decoration: none;
+        list-style: none;
+        color: #fafafa;
+    }
+    .about-content {
+        position: relative;
+        left: 0%;
+        width: 100%;
+        height: 100vh;
+        bottom: -100px;
+        margin-bottom: 10%;
+    }
+   
+    .about-head {
+        position: absolute;
+        text-shadow: 0 2px 5px rgb(0 0 0 / 50%);
+        font-size: 28px;
+        color: #13213C;
+        left: 31%;
+        bottom: -145px;
+        text-align: center;
+    }
+    .join-head h1{
+        padding-top: 20%;
+        font-size: 22px !important;
+        text-align: center;
+        color: #4D4D75;
+    }
+    .join-head-sub h2{
+        font-size: 15px;
+    }
+    #name h2{
+        font-size: 20px;
+    }
+    .boxform{
+        width: 100%;
+        height: 30px;
+    }
+    .firstname {
+        position: relative;
+        top: -8px;
+        left: 0;
+    }
+    .name{
+        font-size: 20px;
+    }
+    .email{
+        position: relative;
+        top: -8px;
+        left: 0;  
+    }
+    .organisation{
+        position: relative;
+        top: -8px;
+        left: 0;      
+    }
+    form {
+        padding-top: 5.5%;
+        position: relative;
+        top: -15px;
+    }
+    .followus h1 {
+        position: relative;
+        top: 10px;
+        left: 28%;
+        text-align: center;
+        justify-content: center;
+    }
+    .followus .social-icons{
+        position: relative;
+        top: 20%;
+    }
+}
