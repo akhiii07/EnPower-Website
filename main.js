@@ -1,5 +1,5 @@
 const key = "5197fea25c654efba4e354bf8aa0afae"
-const url = `https://newsapi.org/v2/top-headlines?country=in&category=business&pageSize=5&apiKey=${key}`
+const url = "https://newsapi.org/v2/top-headlines?country=in&category=business&pageSize=5&apiKey=5197fea25c654efba4e354bf8aa0afae"
 
 const recievedNews = (newsdata) => {
     const articlesDiv = document.querySelector(".articles")
