@@ -1,4 +1,3 @@
-
 *{
     margin: 0px;
     padding: 0px;
@@ -312,7 +311,6 @@ form{
 
 
 /* #####################################################################################333 */
-
 i {
     padding: 2% ;
     font-size: 2em !important;
@@ -362,7 +360,6 @@ i:hover{
 .right{
     color: grey !important;
 }
-
 .btn-button{
     cursor: pointer;
     font-size: 20px;
