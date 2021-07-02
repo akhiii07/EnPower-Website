@@ -44,6 +44,7 @@ function showItems(){
     if(i>=index*maxItem - maxItem && i<index*maxItem){
         Items[i].classList.remove("hide");
         Items[i].classList.add("show");
+        
     }
 
     page.innerHTML= index;
